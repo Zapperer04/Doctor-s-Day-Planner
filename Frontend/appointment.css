@@ -1,0 +1,94 @@
+.appointments {
+  padding: 70px 8%;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.appointments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.appointments-header h2 {
+  color: #03364a;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.appointment-controls {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.appointment-controls input {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 230px;
+  transition: border 0.3s;
+}
+.appointment-controls input:focus {
+  border-color: #02c39a;
+  outline: none;
+}
+
+.appointment-controls button {
+  background-color: #05668d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.appointment-controls button:hover {
+  background-color: #028090;
+  transform: translateY(-2px);
+}
+
+.appointment-list {
+  display: grid;
+  gap: 20px;
+}
+
+.appointment-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  border-left: 4px solid #02c39a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s;
+}
+.appointment-card:hover {
+  transform: translateY(-3px);
+}
+
+.appointment-info h4 {
+  color: #03364a;
+  margin-bottom: 4px;
+}
+.appointment-info p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.appointment-actions button {
+  background: #028090;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.appointment-actions button:hover {
+  background: #02c39a;
+}

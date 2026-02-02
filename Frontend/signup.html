@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | Doctor's Day Planner</title>
+
+  <link rel="stylesheet" href="signup.css" />
+  <script defer src="signup.js"></script>
+</head>
+<body>
+
+  <section class="signup-container">
+    <div class="image-side">
+      <img src="https://img.freepik.com/premium-vector/doctor-is-man-who-points-treatment-plan_456984-31.jpg" alt="Doctor illustration" />
+    </div>
+
+    <div class="signup-box">
+      <h1>Doctor's Day Planner</h1>
+      <h2>Create Your Account</h2>
+
+      <form id="signupForm">
+        <div class="input-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a password" required />
+        </div>
+
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" placeholder="Re-enter your password" required />
+        </div>
+
+        <button type="submit" class="signup-btn">Sign Up</button>
+
+        <p class="login-text">
+          Already have an account? <a href="login.html">Login here</a>
+        </p>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #2e2e2e;
+  padding: 60px 8%;
+}
+
+.reminders {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.reminders-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reminders-header h2 {
+  color: #028090;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.reminder-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.reminder-controls input[type="text"],
+.reminder-controls input[type="datetime-local"] {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #a0d9d9;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.reminder-controls input:focus {
+  border-color: #028090;
+}
+
+.reminder-controls button {
+  background-color: #05668d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.reminder-controls button:hover {
+  background-color: #028090;
+}
+
+.reminder-list {
+  margin-top: 30px;
+}
+
+.reminder-item {
+  background-color: #e8f9f3;
+  border-left: 5px solid #02c39a;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.reminder-item:hover {
+  background-color: #d8f4ee;
+  transform: translateY(-2px);
+}
+
+.reminder-text {
+  flex: 1;
+  font-size: 1.05rem;
+}
+
+.reminder-time {
+  color: #555;
+  font-size: 0.9rem;
+  margin-right: 15px;
+}
+
+.delete-reminder {
+  background: none;
+  border: none;
+  color: #d62828;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.delete-reminder:hover {
+  background-color: #fddede;
+}
+
+@media (max-width: 600px) {
+  .reminder-controls {
+    flex-direction: column;
+  }
+
+  .reminder-controls input,
+  .reminder-controls button {
+    width: 100%;
+  }
+
+  .reminder-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

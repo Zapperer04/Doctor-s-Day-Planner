@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor's Day Planner</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Doctor's Day Planner</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="appointment.html">Appointments</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="reminders.html">Reminders</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Plan Smarter, Heal Better</h2>
+      <p>
+        Keep your appointments, patient records, and daily notes perfectly organized.
+        Doctor’s Day Planner helps you focus on what matters most — your patients.
+      </p>
+      <button id="getStartedBtn">Get Started</button>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/2966/2966481.png" alt="Doctor Planner" />
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="features" id="features">
+    <h3>Why Choose Doctor's Day Planner?</h3>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h4>🗓 Appointment Scheduler</h4>
+        <p>Manage your patient appointments with an intuitive calendar view and reminders.</p>
+      </div>
+      <div class="feature-card">
+        <h4>🧾 Task Management</h4>
+        <p>Organize your day with prioritized to-do lists and progress tracking.</p>
+      </div>
+      <div class="feature-card">
+        <h4>⏰ Smart Notifications</h4>
+        <p>Get timely alerts for upcoming appointments, prescriptions, and daily goals.</p>
+      </div>
+      <div class="feature-card">
+        <h4>📊 Analytics</h4>
+        <p>View insights about your daily performance and appointment patterns.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE SECTION -->
+  <section class="quote" id="quote">
+    “A well-planned day leads to better care and a calmer mind.”
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 Doctor’s Day Planner | Designed with ❤️ for healthcare professionals
+  </footer>
+
+  <script>
+    // Redirection logic for the "Get Started" button
+    document.addEventListener("DOMContentLoaded", () => {
+      const getStartedBtn = document.getElementById("getStartedBtn");
+      getStartedBtn.addEventListener("click", () => {
+        window.location.href = "dashboard.html";
+      });
+    });
+  </script>
+</body>
+</html>

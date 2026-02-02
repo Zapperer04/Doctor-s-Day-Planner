@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor's Dashboard | Doctor's Day Planner</title>
+
+  <link rel="stylesheet" href="dashboard.css" />
+  <script defer src="dashboard.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Doctor's Day Planner</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="reminders.html">Reminders</a></li>
+        <li><a href="academic.html">Academic</a></li>
+      </ul>
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </nav>
+  </header>
+
+  <!-- DASHBOARD MAIN SECTION -->
+  <section class="dashboard">
+    <h2>Welcome, Doctor</h2>
+
+    <div id="calendar" class="calendar"></div>
+
+    <div class="dashboard-sections">
+      <div id="appointmentsSection">
+        <h3>Upcoming Appointments</h3>
+        <ul id="appointmentsList"><li>Loading appointments...</li></ul>
+      </div>
+
+      <div id="tasksSection">
+        <h3>Your Tasks</h3>
+        <ul id="tasksList"><li>Loading tasks...</li></ul>
+      </div>
+
+      <div id="remindersSection">
+        <h3>Reminders</h3>
+        <ul id="remindersList"><li>Loading reminders...</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Doctor's Day Planner | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
